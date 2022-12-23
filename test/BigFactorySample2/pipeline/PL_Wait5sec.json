@@ -1,0 +1,20 @@
+{
+	"name": "PL_Wait5sec",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait5",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@pipeline().globalParameters.GP-Int",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
